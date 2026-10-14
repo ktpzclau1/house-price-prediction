@@ -86,7 +86,7 @@ print("\nCORRELATION ANALYSIS")
 print(f"House size vs price: {correlation:.2f}")
 
 # Save the analysed dataset
-output_path = Path(__file__).parent / "analysed_house_prices.csv"
+output_path = BASE_DIR / "data" / "analysed_house_prices.csv"
 
 df.to_csv(output_path, index=False)
 
