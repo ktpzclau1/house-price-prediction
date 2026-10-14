@@ -88,7 +88,7 @@ print(results.round(2).to_string(index=False))
 # 7. Save predictions to CSV
 # ---------------------------------
 
-output_path = BASE_DIR / "model_predictions.csv"
+output_path = BASE_DIR / "data" / "model_predictions.csv"
 
 results.to_csv(output_path, index=False)
 
